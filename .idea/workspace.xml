@@ -10,33 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c729703e-fa02-408c-a8bf-9fdce4c2f1f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SpringEE2_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jakarta_servlet_api_6_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringEE2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connector/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Connector/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Database/DatabaseConnectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Database/ItemDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Database/UserDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servlet/AddServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servlet/DeleteServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servlet/DetailServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Servlet/MainServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jakarta.servlet-api-6.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/jakarta.servlet.jsp-api-3.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/postgresql-42.7.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/navBar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Servlet/UpdateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/ItemDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/ItemDB.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -238,12 +213,36 @@
       <updated>1708169447877</updated>
       <workItem from="1708170234048" duration="3935000" />
       <workItem from="1708319638737" duration="2823000" />
-      <workItem from="1708323301816" duration="19293000" />
+      <workItem from="1708323301816" duration="19883000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <option name="closed" value="true" />
+      <created>1708422728681</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708422728681</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

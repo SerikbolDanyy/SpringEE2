@@ -84,4 +84,21 @@ public class ItemDB {
             e.printStackTrace();
         }
     }
+
+    public static void updateItem(Item item) {
+        try (Connection connection = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
+             PreparedStatement statement = connection.prepareStatement(
+                     "UPDATE items SET name = ?, description = ?, price = ? WHERE id = ?")) {
+
+            statement.setString(1, item.getName());
+            statement.setString(2, item.getDescription());
+            statement.setDouble(3, item.getPrice());
+            statement.setLong(4, item.getId());
+
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
