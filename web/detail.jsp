@@ -32,7 +32,41 @@
             <%}%>
             <br>
             <a href="/deleteItem?id=<%=item.getId()%>" class="btn btn-danger">Delete</a>
-            <button class="btn btn-primary">Update</button>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Update
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add item</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form action="/updateItem" method="post">
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Name:</label>
+                                    <input name="name" type="text" class="form-control" id="2" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Description:</label>
+                                    <input name="description" type="text" class="form-control" id="1" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Price:</label>
+                                    <input name="price" type="number" class="form-control" id="3" aria-describedby="emailHelp">
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
 </body>
 </html>

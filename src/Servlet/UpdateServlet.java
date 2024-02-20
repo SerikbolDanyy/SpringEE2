@@ -14,22 +14,17 @@ import java.io.IOException;
 public class UpdateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            // Получаем данные из формы
-            long itemId = Long.parseLong(request.getParameter("itemId"));
             String name = request.getParameter("name");
             String description = request.getParameter("description");
             double price = Double.parseDouble(request.getParameter("price"));
 
-            // Создаем объект Item
-            Item updatedItem = new Item();
-            updatedItem.setId(itemId);
-            updatedItem.setName(name);
-            updatedItem.setDescription(description);
-            updatedItem.setPrice(price);
+            Item item = new Item();
+            item.setName(name);
+            item.setDescription(description);
+            item.setPrice(price);
 
-            // Обновляем элемент в базе данных
             ItemDB itemDB = new ItemDB();
-            itemDB.updateItem(updatedItem);
+            itemDB.updateItem(item);
 
             response.sendRedirect("index.jsp");
         } catch (Exception e) {
